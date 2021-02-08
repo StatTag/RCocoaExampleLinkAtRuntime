@@ -13,9 +13,18 @@
 		38B7127D25BA2A3B001FE369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B7127B25BA2A3B001FE369 /* Main.storyboard */; };
 		38B7128025BA2A3B001FE369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B7127F25BA2A3B001FE369 /* main.m */; };
 		38B7128B25BA2A3B001FE369 /* RCocoaExampleLinkAtRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B7128A25BA2A3B001FE369 /* RCocoaExampleLinkAtRuntimeTests.m */; };
+		38CF162525CDF4320022D130 /* RCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B713DC25BA2BCA001FE369 /* RCocoa.framework */; };
+		38CF162625CDF4320022D130 /* RCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B713DC25BA2BCA001FE369 /* RCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		38A191EA25CDFBD90070FE95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38B713D625BA2BCA001FE369 /* RCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 350C8C6F1E1E8FEF003DE3F8;
+			remoteInfo = RCocoa;
+		};
 		38B7128725BA2A3B001FE369 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 38B7126825BA2A39001FE369 /* Project object */;
@@ -23,7 +32,35 @@
 			remoteGlobalIDString = 38B7126F25BA2A39001FE369;
 			remoteInfo = RCocoaExampleLinkAtRuntime;
 		};
+		38B713DB25BA2BCA001FE369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38B713D625BA2BCA001FE369 /* RCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 350C8C701E1E8FEF003DE3F8;
+			remoteInfo = RCocoa;
+		};
+		38B713DD25BA2BCA001FE369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38B713D625BA2BCA001FE369 /* RCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 350C8C7A1E1E8FF0003DE3F8;
+			remoteInfo = RCocoaTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38CF162725CDF4320022D130 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38CF162625CDF4320022D130 /* RCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		38B7127025BA2A39001FE369 /* RCocoaExampleLinkAtRuntime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCocoaExampleLinkAtRuntime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +76,9 @@
 		38B7128625BA2A3B001FE369 /* RCocoaExampleLinkAtRuntimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCocoaExampleLinkAtRuntimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B7128A25BA2A3B001FE369 /* RCocoaExampleLinkAtRuntimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCocoaExampleLinkAtRuntimeTests.m; sourceTree = "<group>"; };
 		38B7128C25BA2A3B001FE369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B713D625BA2BCA001FE369 /* RCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCocoa.xcodeproj; path = ../RCocoa/RCocoa.xcodeproj; sourceTree = "<group>"; };
+		38B713E325BA2CDF001FE369 /* R.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R.framework; path = ../../../../../../../Library/Frameworks/R.framework; sourceTree = "<group>"; };
+		38CF160825CDDAF00022D130 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CF162525CDF4320022D130 /* RCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +103,11 @@
 		38B7126725BA2A39001FE369 = {
 			isa = PBXGroup;
 			children = (
+				38B713D625BA2BCA001FE369 /* RCocoa.xcodeproj */,
 				38B7127225BA2A39001FE369 /* RCocoaExampleLinkAtRuntime */,
 				38B7128925BA2A3B001FE369 /* RCocoaExampleLinkAtRuntimeTests */,
 				38B7127125BA2A39001FE369 /* Products */,
+				38B713DF25BA2BE6001FE369 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +132,7 @@
 				38B7127E25BA2A3B001FE369 /* Info.plist */,
 				38B7127F25BA2A3B001FE369 /* main.m */,
 				38B7128125BA2A3B001FE369 /* RCocoaExampleLinkAtRuntime.entitlements */,
+				38CF160825CDDAF00022D130 /* README.md */,
 			);
 			path = RCocoaExampleLinkAtRuntime;
 			sourceTree = "<group>";
@@ -102,6 +146,23 @@
 			path = RCocoaExampleLinkAtRuntimeTests;
 			sourceTree = "<group>";
 		};
+		38B713D725BA2BCA001FE369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38B713DC25BA2BCA001FE369 /* RCocoa.framework */,
+				38B713DE25BA2BCA001FE369 /* RCocoa.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38B713DF25BA2BE6001FE369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B713E325BA2CDF001FE369 /* R.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,11 +172,14 @@
 			buildPhases = (
 				38B7126C25BA2A39001FE369 /* Sources */,
 				38B7126D25BA2A39001FE369 /* Frameworks */,
+				38CF162725CDF4320022D130 /* Embed Frameworks */,
 				38B7126E25BA2A39001FE369 /* Resources */,
+				38CF162B25CDF5AE0022D130 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38A191EB25CDFBD90070FE95 /* PBXTargetDependency */,
 			);
 			name = RCocoaExampleLinkAtRuntime;
 			productName = RCocoaExampleLinkAtRuntime;
@@ -169,6 +233,12 @@
 			mainGroup = 38B7126725BA2A39001FE369;
 			productRefGroup = 38B7127125BA2A39001FE369 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 38B713D725BA2BCA001FE369 /* Products */;
+					ProjectRef = 38B713D625BA2BCA001FE369 /* RCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				38B7126F25BA2A39001FE369 /* RCocoaExampleLinkAtRuntime */,
@@ -176,6 +246,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		38B713DC25BA2BCA001FE369 /* RCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RCocoa.framework;
+			remoteRef = 38B713DB25BA2BCA001FE369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38B713DE25BA2BCA001FE369 /* RCocoa.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RCocoa.xctest;
+			remoteRef = 38B713DD25BA2BCA001FE369 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		38B7126E25BA2A39001FE369 /* Resources */ = {
@@ -195,6 +282,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38CF162B25CDF5AE0022D130 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nBuildRVersion=$(otool -L \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/$TARGET_NAME\" | grep -Eo \"R.framework\\/Versions\\/(.*)\\/Resources\" | grep -Eo '[+-]?[0-9]+([.][0-9]+)?')\n#echo $BuildRVersion\necho $TARGET_BUILD_DIR\necho $FULL_PRODUCT_NAME\necho $TARGET_NAME\necho $BuildRVersion\n#install_name_tool -change /Library/Frameworks/R.framework/Versions/$BuildRVersion/Resources/lib/libR.dylib /Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/$TARGET_NAME\"\n#install_name_tool -change /Library/Frameworks/R.framework/Versions/$BuildRVersion/Resources/lib/libR.dylib /Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib  \"$TARGET_BUILD_DIR/$PRODUCT_NAME/Versions/A/$TARGET_NAME\"\n#install_name_tool -change /Library/Frameworks/R.framework/Versions/$BuildRVersion/Resources/lib/libR.dylib /Library/Frameworks/R.framework/Versions/Current/Resources/lib/libR.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME/Versions/Current/$TARGET_NAME\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38B7126C25BA2A39001FE369 /* Sources */ = {
@@ -218,6 +325,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		38A191EB25CDFBD90070FE95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCocoa;
+			targetProxy = 38A191EA25CDFBD90070FE95 /* PBXContainerItemProxy */;
+		};
 		38B7128825BA2A3B001FE369 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 38B7126F25BA2A39001FE369 /* RCocoaExampleLinkAtRuntime */;
@@ -350,17 +462,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = RCocoaExampleLinkAtRuntime/RCocoaExampleLinkAtRuntime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ZRBJAU296F;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = E74ZKF37E6;
+				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/R.framework/Headers",
+					"\"$(BUILT_PRODUCTS_DIR)/include\"/**",
+				);
 				INFOPLIST_FILE = RCocoaExampleLinkAtRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ericwhitley.RCocoaExampleLinkAtRuntime;
+				PRODUCT_BUNDLE_IDENTIFIER = org.stattag.RCocoaExampleLinkAtRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -369,17 +492,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = RCocoaExampleLinkAtRuntime/RCocoaExampleLinkAtRuntime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ZRBJAU296F;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = E74ZKF37E6;
+				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/R.framework/Headers",
+					"\"$(BUILT_PRODUCTS_DIR)/include\"/**",
+				);
 				INFOPLIST_FILE = RCocoaExampleLinkAtRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.ericwhitley.RCocoaExampleLinkAtRuntime;
+				PRODUCT_BUNDLE_IDENTIFIER = org.stattag.RCocoaExampleLinkAtRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

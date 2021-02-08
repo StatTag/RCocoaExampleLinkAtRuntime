@@ -8,7 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
+
+@property (weak) IBOutlet NSTextField *DateField;
+@property (weak) IBOutlet NSTextView *RCommandInputText;
+@property (weak) IBOutlet NSTextView *RCommandResponseText;
+@property (weak) IBOutlet NSPopUpButton *RVersionPopUpButton;
+@property (weak) IBOutlet NSTableView *RInfoTableView;
 
 
 @end
