@@ -1,6 +1,10 @@
 # RCocoaExampleLinkAtRuntime
 Example of linking to RCocoa and R
 
+# Caveats
+
+* This demo currently only supports returning a DataFrame
+
 # To run
 
 * Clone repository
